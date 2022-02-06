@@ -36,7 +36,7 @@ function updateScore(playerSelection,computerSelection){
 }
 
 function checkWinner() {
-    if( rounds === 5){
+    if(computerScore === 5 || playerScore === 5){
         if(computerScore === playerScore){
             document.getElementById('finalResult').textContent = "It's a draw! :P";
         } else if (playerScore > computerScore){
